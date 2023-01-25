@@ -9,12 +9,8 @@
     padding: 0 2em;
     background-color: #2e2e2e;
   }
-  > aside {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
   > main {
-    grid-column: 2/-1;
+    grid-column: 1/-1;
     grid-row: 2/3;
   }
   > footer {
@@ -25,11 +21,6 @@
 
 @media (max-width: 900px) {
   .container {
-    > aside {
-      grid-column: 1/2;
-      grid-row: 2/3;
-      z-index: 1;
-    }
     > main {
       grid-column: 1/-1;
       grid-row: 2/3;

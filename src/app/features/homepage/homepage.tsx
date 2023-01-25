@@ -10,9 +10,6 @@ export default function HomePage() {
       <header>
         <Header />
       </header>
-      <aside>
-        <SideBar />
-      </aside>
       <main>
         <Main></Main>
       </main>
