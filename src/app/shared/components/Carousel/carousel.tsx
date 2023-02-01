@@ -35,6 +35,16 @@ export default function Carousel() {
       </div>
       <div className="action-container">
         <IoIosArrowBack onClick={handlePrevImg} />
+        <div className="carousel-text-container">
+          <h1>More than a resume builder</h1>
+          <h6>
+            <i>
+              Enhance Career Counseling You don’t have to deal with the job
+              search alone
+            </i>
+          </h6>
+          <button>Get Started</button>
+        </div>
         <IoIosArrowForward onClick={handleNextImg} />
       </div>
     </div>
