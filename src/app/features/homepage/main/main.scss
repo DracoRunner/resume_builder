@@ -1,20 +1,79 @@
-.feature-section {
-  background: #0a0414a8;
-  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 40%);
-  width: 70%;
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background: #5a5a5aa3;
+  color: white;
   overflow: auto;
-  color: rgb(202, 202, 202);
-  margin-top: 10em;
-}
-
-@media (max-width: 1200px) {
-  .feature-section {
-    width: 80%;
+  > header {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 2em;
+    text-align: center;
+    padding: 4em;
+    > h2 {
+      font-size: 40px;
+    }
+    > div {
+      margin-top: 2em;
+      > button {
+        box-shadow: -2px 28px 39px -7px #2e2e2e;
+        background: linear-gradient(to bottom, #919191 5%, #000000 100%);
+        background-color: #c7c5c7;
+        border-radius: 8px;
+        border: 0;
+        display: inline-block;
+        cursor: pointer;
+        color: #ababab;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 30px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #060606;
+        text-transform: uppercase;
+        &:hover {
+          background: linear-gradient(to bottom, #000000 5%, #c7c5c7 100%);
+          background-color: #000000;
+        }
+      }
+    }
+  }
+  > section {
+    width: 70%;
+    background: #0a0414a8;
+    margin-top: 5em;
   }
 }
 
 @media (max-width: 900px) {
-  .feature-section {
-    width: 90%;
+  .main-container {
+    > header {
+      width: 90%;
+      padding: 1em;
+      > h2 {
+        font-size: 23px;
+      }
+      > small {
+        line-height: 25px;
+      }
+      > div {
+        margin-top: 1em;
+        > button {
+          font-size: 10px;
+          padding: 10px 20px;
+        }
+      }
+    }
+    > section {
+      width: 90%;
+      margin: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
   }
 }

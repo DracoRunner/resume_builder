@@ -32,12 +32,25 @@ const featuresArr = [
 
 export default function Main() {
   return (
-    <>
-      <div className="feature-section">
+    <div className="main-container">
+      <header>
+        <h2>Effortlessly Build Your Resume and Cover Letter</h2>
+        <small>
+          Description: Get ready to impress potential employers with our simple
+          and effective online resume and cover letter builder. Choose from
+          professional templates, add your own information and experience, and
+          download your documents in minutes. Start your job search with
+          confidence today!
+        </small>
+        <div>
+          <button>Build Your Resume</button>
+        </div>
+      </header>
+      <section>
         {featuresArr.map((ft) => {
           return <Features {...ft}></Features>;
         })}
-      </div>
-    </>
+      </section>
+    </div>
   );
 }

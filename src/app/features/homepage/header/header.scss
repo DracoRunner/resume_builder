@@ -84,7 +84,7 @@
       position: absolute;
       right: 0px;
       top: 0px;
-      height: 100px;
+      height: 80px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -133,15 +133,18 @@
       position: fixed;
       z-index: 1;
       width: 100%;
-      top: 100px;
+      top: 80px;
       right: -500px;
-      height: calc(100% - 100px);
+      height: calc(100% - 80px);
       justify-content: flex-start;
       flex-direction: column;
       align-items: flex-start;
       background: #2e2e2e;
       margin: 0;
       padding: 0;
+      > li {
+        font-size: 12px;
+      }
     }
   }
 }

@@ -14,15 +14,9 @@ export const FeatureContainer = styled.div`
   }
 
   @media (max-width: 900px) {
-    flex-direction: column;
-    height: max-content;
-    margin: 1em;
-    &:nth-child(odd) {
-      flex-direction: column;
-    }
-    &:nth-child(even) {
-      flex-direction: column;
-    }
+    position: relative;
+    height: 400px;
+    margin: 0;
   }
 `;
 
@@ -34,6 +28,9 @@ export const FeatureImage = styled.div`
     width: 100%;
   }
   @media (max-width: 900px) {
+    position: absolute;
+    top: 0;
+    height: 100%;
     width: 100%;
   }
 `;
@@ -62,9 +59,26 @@ export const FeatureDescContainer = styled.div`
     justify-content: center;
   }
   @media (max-width: 900px) {
+    position: absolute;
+    display: flex;
+    padding: 0em;
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    background: #4a4a4a73;
     width: 100%;
+    overflow: hidden;
+    justify-content: flex-start;
+    gap: 0;
     > header {
-      font-size: 30px;
+      font-size: 25px;
+      line-height: 30px;
+      padding: 0.5em;
+      margin-bottom: 0px;
+    }
+    > span {
+      font-size: 15px;
+      padding: 1em;
     }
   }
 `;
