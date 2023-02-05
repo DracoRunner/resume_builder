@@ -1,0 +1,29 @@
+.color-option {
+  height: 35px;
+  width: 35px;
+  list-style: none;
+  border-radius: 4px;
+  margin: 7px;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  &.is-selected {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.color-option:nth-child(1) {
+  background: #ffffff;
+}
+.color-option:nth-child(2) {
+  background: #2a303c;
+}
+.color-option:nth-child(3) {
+  background: #e4d8b4;
+}
+.color-option:nth-child(4) {
+  background: #345ca8;
+}

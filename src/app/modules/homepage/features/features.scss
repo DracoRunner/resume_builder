@@ -1,0 +1,14 @@
+.feature-img-container {
+  background-image: url("../../../../assets/images/bg_1.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  height: 500px;
+  display: flex;
+  > div {
+    background: #00000091;
+    color: white;
+  }
+}
