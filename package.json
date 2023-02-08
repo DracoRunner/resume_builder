@@ -1,6 +1,6 @@
 {
-  "homepage": "https://DracoRunner.github.io/resume_builder",
-  "name": "resume_builder",
+  "homepage": "https://DracoRunner.github.io/resume_craft",
+  "name": "resume_craft",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
