@@ -5,12 +5,14 @@ export default function Header(params: any) {
     <header>
       <span>ONLINE RESUME BUILDER</span>
       <h1 className="text-4xl font-bold ">
-        Only 2% of resumes make it past the first round. Be in the top 2%
+        Get Noticed and Hired Faster with a Professional Resume and Cover Letter
       </h1>
       <h6>
-        Use professional field-tested resume templates that follow the exact
-        ‘resume rules’ employers look for. Easy to use and done within minutes -
-        try now for free!
+        Ultimate career toolkit, designed to help you create a professional,
+        attention-grabbing resume that showcases your skills and experience.
+        With an easy-to-use interface and a library of{" "}
+        <b className="uppercase">expertly crafted </b>
+        templates
       </h6>
       <Button>Create My Resume</Button>
     </header>

@@ -8,7 +8,7 @@ export default function Features(params: any) {
       <div className="w-full p-8 grid grid-cols-3 bg-base-300">
         <div className="flex flex-col gap-6 justify-center  p-10 ">
           <h2 className="text-3xl font-bold">
-            Use the best resume maker as your guide
+            Elevate your career with a flawless resume, crafted by Resume.Craft
           </h2>
           <h6>
             Getting that dream job can seem like an impossible task. We’re here
@@ -21,16 +21,16 @@ export default function Features(params: any) {
           </div>
         </div>
         <div className="flex flex-row gap-6 justify-center items-center col-span-2">
-          <img className="w-1/4" src={resume_1} />
-          <img className="w-1/3" src={resume_2} />
-          <img className="w-1/4" src={resume_1} />
+          <img className="w-1/4" alt="Resume_1" src={resume_1} />
+          <img className="w-1/3" alt="Resume_2" src={resume_2} />
+          <img className="w-1/4" alt="Resume_3" src={resume_1} />
         </div>
       </div>
       <div className="w-full bg-base-200 feature-img-container">
         <div className="w-full grid grid-cols-3">
           <div className="flex flex-col col-start-2 gap-6 justify-center items-center text-center ">
             <h2 className="text-3xl font-bold">
-              Use the best resume maker as your guide
+              Craft your career with a standout resume, powered by Resume.Craft.
             </h2>
             <h6>
               Getting that dream job can seem like an impossible task. We’re
@@ -39,7 +39,7 @@ export default function Features(params: any) {
               by millions of professionals.
             </h6>
             <div className="flex gap-6">
-              <Button color="primary">Build now</Button>
+              <Button color="primary">Create now</Button>
             </div>
           </div>
         </div>

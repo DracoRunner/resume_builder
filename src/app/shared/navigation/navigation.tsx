@@ -1,11 +1,14 @@
 import React from "react";
 import { Button, Dropdown, Navbar } from "react-daisyui";
 import { FaUserCircle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../utilities/ThemeContext";
 import "./navigation.scss";
 const DEFAULT_THEMES = ["light", "dark", "retro", "aqua"];
+
 const Navigation = () => {
   const { setTheme } = React.useContext(ThemeContext);
+  const navigate = useNavigate();
   return (
     <div className="flex w-full items-center justify-center gap-2 bg-base-300">
       <Navbar>
@@ -15,7 +18,9 @@ const Navigation = () => {
           </Button>
         </Navbar.Start>
         <Navbar.End>
-          <Button color="ghost">Resume</Button>
+          <Button onClick={() => navigate("/home")} color="ghost">
+            Resume
+          </Button>
           <Button color="ghost">Cover Letter</Button>
           <Button color="ghost">
             <FaUserCircle size={30} />

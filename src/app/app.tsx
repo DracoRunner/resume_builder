@@ -1,13 +1,12 @@
-import "./app.scss";
-import HomePage from "./modules/homepage/homepage";
-import Navigation from "./shared/naviagtion/navigation";
+import { Outlet } from "react-router-dom";
+import Navigation from "./shared/navigation/navigation";
 import ThemeContext from "./utilities/ThemeContext";
 
 export default function App() {
   return (
     <ThemeContext>
-      <Navigation></Navigation>
-      <HomePage></HomePage>
+      <Navigation />
+      <Outlet />
     </ThemeContext>
   );
 }
