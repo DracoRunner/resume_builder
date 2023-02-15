@@ -4,7 +4,7 @@ import "./header.scss";
 export default function Header(params: any) {
   const navigate = useNavigate();
   return (
-    <header>
+    <header className="page-header">
       <span>ONLINE RESUME BUILDER</span>
       <h1 className="text-4xl font-bold ">
         Get Noticed and Hired Faster with a Professional Resume and Cover Letter

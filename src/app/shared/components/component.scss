@@ -3,7 +3,7 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
-  background: inherit;
+  background: hsla(var(--b1) / 0.2);
   border-color: hsl(var(--bc) / var(--tw-border-opacity));
   border-width: 2px;
   border-radius: var(--rounded-btn, 0.5rem);
@@ -12,11 +12,14 @@
   .editor {
     height: 100%;
     overflow: auto;
+    background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+
     &:focus {
       outline: 2px solid hsla(var(--bc) / 0.2);
       outline-offset: 0px;
     }
   }
+
   .editor-toolbar {
     margin: 0;
     padding: 0.5em;

@@ -4,7 +4,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../utilities/ThemeContext";
 import "./navigation.scss";
-const DEFAULT_THEMES = ["light", "dark", "retro", "aqua"];
+const DEFAULT_THEMES = ["light", "dark", "retro"];
 
 const Navigation = () => {
   const { setTheme } = React.useContext(ThemeContext);
