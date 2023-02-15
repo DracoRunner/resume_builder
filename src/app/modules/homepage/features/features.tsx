@@ -1,8 +1,10 @@
 import { Button } from "react-daisyui";
+import { useNavigate } from "react-router-dom";
 import resume_1 from "../../../../assets/images/resume_smp_1.png";
 import resume_2 from "../../../../assets/images/resume_smp_2.png";
 import "./features.scss";
 export default function Features(params: any) {
+  const navigate = useNavigate();
   return (
     <>
       <div className="w-full p-8 grid grid-cols-3 bg-base-300">
@@ -17,7 +19,9 @@ export default function Features(params: any) {
             millions of professionals.
           </h6>
           <div className="flex gap-6">
-            <Button color="primary">Choose Template</Button>
+            <Button onClick={() => navigate("/create-resume")} color="primary">
+              Choose Template
+            </Button>
           </div>
         </div>
         <div className="flex flex-row gap-6 justify-center items-center col-span-2">
@@ -39,7 +43,12 @@ export default function Features(params: any) {
               by millions of professionals.
             </h6>
             <div className="flex gap-6">
-              <Button color="primary">Create now</Button>
+              <Button
+                onClick={() => navigate("/create-resume")}
+                color="primary"
+              >
+                Create now
+              </Button>
             </div>
           </div>
         </div>
