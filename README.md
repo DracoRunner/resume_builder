@@ -4,4 +4,4 @@ The **Resume craft** project is a comprehensive tool for building and customizin
 
 ###Please visit to see
 
-https://dracorunner.github.io/resume_carft/
+https://dracorunner.github.io/resume_craft/
