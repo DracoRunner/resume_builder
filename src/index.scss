@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Chalkboard;
+  src: url(./assets/fonts/chalkboard.ttf);
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--pf) var(--pf);
@@ -34,6 +39,10 @@ body,
   height: 100%;
   width: 100%;
   margin: 0;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-family: Chalkboard;
 }
 
 #root {
