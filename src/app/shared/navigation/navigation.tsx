@@ -12,14 +12,16 @@ const Navigation = () => {
   return (
     <Navbar className="flex w-full items-center justify-center gap-2 bg-base-300">
       <Navbar.Start>
-        <Button className="btn btn-ghost text-2xl	 capitalize" color="ghost">
+        <Button
+          onClick={() => navigate("/home")}
+          className="btn btn-ghost text-2xl	 capitalize"
+          color="ghost"
+        >
           Resume.Craft
         </Button>
       </Navbar.Start>
       <Navbar.End>
-        <Button onClick={() => navigate("/home")} color="ghost">
-          Resume
-        </Button>
+        <Button color="ghost">Resume</Button>
         <Button color="ghost">Cover Letter</Button>
         <Button color="ghost">
           <FaUserCircle size={30} />

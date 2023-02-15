@@ -6,7 +6,9 @@ export default function App() {
   return (
     <ThemeContext>
       <Navigation />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </ThemeContext>
   );
 }

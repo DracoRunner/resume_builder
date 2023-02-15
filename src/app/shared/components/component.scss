@@ -1,0 +1,28 @@
+.editor-container {
+  height: 250px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  background: inherit;
+  border-color: hsl(var(--bc) / var(--tw-border-opacity));
+  border-width: 2px;
+  border-radius: var(--rounded-btn, 0.5rem);
+  --tw-border-opacity: 0.2;
+
+  .editor {
+    height: 100%;
+    overflow: auto;
+    &:focus {
+      outline: 2px solid hsla(var(--bc) / 0.2);
+      outline-offset: 0px;
+    }
+  }
+  .editor-toolbar {
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  button[aria-checked="true"] {
+    background-color: hsla(var(--su, 0.5rem));
+  }
+}

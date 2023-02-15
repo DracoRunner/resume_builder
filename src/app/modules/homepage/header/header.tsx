@@ -1,6 +1,8 @@
 import { Button } from "react-daisyui";
+import { useNavigate } from "react-router-dom";
 import "./header.scss";
 export default function Header(params: any) {
+  const navigate = useNavigate();
   return (
     <header>
       <span>ONLINE RESUME BUILDER</span>
@@ -14,7 +16,9 @@ export default function Header(params: any) {
         <b className="uppercase">expertly crafted </b>
         templates
       </h6>
-      <Button>Create My Resume</Button>
+      <Button onClick={() => navigate("/create-resume")}>
+        Create My Resume
+      </Button>
     </header>
   );
 }
